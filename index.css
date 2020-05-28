@@ -1,0 +1,186 @@
+body{
+  position:absolute;
+  left:50%;
+  margin-left:-50%;
+  width:100%;
+  font-family:Hiragino Kaku Gothic ProN;
+}
+
+.container{
+
+  padding:0 15px;
+}
+
+header{
+  background-color:black;
+  height:80px;
+  width:100%;
+  margin:0 auto;
+  position:fixed;
+  top:0px;
+  z-index:10;
+}
+.header-left{
+  margin-top:10px;
+  color:white;
+  float:left;
+}
+
+.header-right {
+  float:right;
+  padding-top: 11px;
+}
+
+.header-right li{
+  float:left;
+  color:white;
+  list-style:none;
+  position: relative;
+}
+
+.header-right li ul{
+  display:none;
+  position:absolute;
+  margin-top:0px;
+  padding-top: 5px;
+  padding-left: 0;
+  background-color: black;
+  width:120px;
+}
+
+.header-right li ul li{
+  float:inherit;
+  margin:0 auto;
+  padding:10px;
+}
+
+.header-right li ul li:nth-child(n+2){
+  border-top: 1px solid gray;
+}
+
+.header-right li a{
+  display:block;
+  margin:0px;
+  padding:0px 20px;
+  color:white;
+  text-decoration: none;
+  text-align:center;
+}
+
+.header-right li a:hover{
+  background-color: rgba(205,62,62,0.5);
+  border-radius:10px;
+  transition: all 0.5s;
+}
+
+.header-right li:hover >ul{
+  display:block;
+}
+
+.top{
+  background-image:url(https://pictkan.com/photo/sports/soccer/%E8%90%BD%E3%81%A1%E8%91%89%E3%81%A8%E5%8F%A4%E3%81%B3%E3%81%9F%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB/jRZl/1280/853/download);
+  background-size:cover;
+  opacity:0.7;
+  height:710px;
+  padding:30px 0px 0px 0px;
+}
+
+.top h1{
+  font-size:150px;
+  color:black;
+  text-align:center;
+  padding-top:140px;
+  height:100px;
+  letter-spacing: 5px;
+}
+
+.top p{
+  color:white;
+  font-size:80px;
+  text-align: center;
+  letter-spacing: 7px;
+  height:30px;
+}
+
+.list{
+  height:2000px;
+  padding-bottom:200px;
+}
+
+.setsumei{
+  height:280px;
+  color:black;
+  border-top: 10px dotted gray;
+  border-bottom:10px dotted gray;
+  margin-top:100px;
+}
+
+.setsumei h3{
+  font-size:50px;
+  text-align: center;
+}
+
+.setsumei p{
+  text-align: center;
+}
+
+.lister{
+  background-color: rgb(230,250,250);
+  box-shadow:10px 10px black;
+  border-radius:30px;
+  width:1300px;
+  margin:0 auto;
+
+}
+
+.youtube{
+  height:600px;
+  margin-bottom: 100px;
+}
+
+.other{
+  height:350px;
+}
+
+.lister p{
+  font-size:90px;
+  color:black;
+  height:60px;
+  padding-left: 20px;
+  padding-top:40px;
+}
+
+.lister ul{
+  padding-left:50px;
+  padding-right:5px;
+  float:left;
+}
+.lister li{
+  padding:5px 0px;
+  list-style:none;
+}
+
+.lister li a{
+  display:inline-block;
+  font-size:27px;
+  color:white;
+  background-color:rgb(88,158,50,0.95);
+  width:250px;
+  text-align:center;
+  text-decoration: none;
+  border-radius:10px;
+}
+
+.lister li a:hover{
+  background-color:rgba(88,158,50,0.6);
+}
+
+footer{
+  height:160px;
+  background-color:black;
+  color:white;
+  width:auto;
+  text-align:center;
+  padding-top:15px;
+  padding-bottom: 50px;
+}
