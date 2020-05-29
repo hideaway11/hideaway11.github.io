@@ -21,7 +21,7 @@ header{
   z-index:10;
 }
 .header-left{
-  margin-top:10px;
+  padding-top:10px;
   color:white;
   float:left;
 }
@@ -77,6 +77,13 @@ header{
   display:block;
 }
 
+@media(max-width:1025px){
+  header{
+    font-size: 22px;
+    height:100px;
+    padding-top: 11px;
+  }
+}
 .top{
   background-image:url(https://pictkan.com/photo/sports/soccer/%E8%90%BD%E3%81%A1%E8%91%89%E3%81%A8%E5%8F%A4%E3%81%B3%E3%81%9F%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB/jRZl/1280/853/download);
   background-size:cover;
@@ -174,14 +181,20 @@ header{
   border-radius:10px;
 }
 
+.lister .none{
+  display: none;
+}
+
 .lister li a:hover{
   background-color:rgba(88,158,50,0.6);
 }
 
-@media(max-width:1000px){
+@media(max-width:1025px){
+
   .top{
     height:670px;
   }
+
   .top h1{
     font-size: 130px;
   }
@@ -189,12 +202,17 @@ header{
   .top p{
     font-size: 70px;
   }
-
+  .setsumei{
+    height:370px;
+  }
+  .setsumei p{
+    font-size: 20px;
+  }
   .list{
-    height:2500px;
+    height:2800px;
   }
   .youtube{
-    height:1200px;
+    height:1400px;
   }
 
 
@@ -202,9 +220,18 @@ header{
     width:50%;
     padding:25px 0px;
   }
+
+  .lister li a{
+    font-size: 33px;
+    height:70px;
+    line-height: 70px;
+  }
+
+
 }
 
 footer{
+
   height:160px;
   background-color:black;
   color:white;
@@ -212,4 +239,10 @@ footer{
   text-align:center;
   padding-top:15px;
   padding-bottom: 50px;
+}
+
+@media(max-width:1025px){
+  footer{
+    font-size: 19px;
+  }
 }
