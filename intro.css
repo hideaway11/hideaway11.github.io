@@ -15,11 +15,11 @@ header{
   background-color:black;
   height:80px;
   width:100%;
-  margin:0 auto;
   position:fixed;
   top:0px;
   z-index:10;
 }
+
 .header-left{
   margin-top:10px;
   color:white;
@@ -77,12 +77,21 @@ header{
   display:block;
 }
 
+@media(max-width:1025px){
+  header{
+    font-size: 22px;
+    height:100px;
+    padding-top: 11px;
+  }
+
 .top{
   background-image:url(https://pictkan.com/photo/sports/soccer/%E8%90%BD%E3%81%A1%E8%91%89%E3%81%A8%E5%8F%A4%E3%81%B3%E3%81%9F%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB/jRZl/1280/853/download);
   background-size:cover;
   opacity:0.7;
   height:710px;
   padding:30px 0px 0px 0px;
+  width:100%;
+  position:absolute;
 }
 
 .top h1{
@@ -94,123 +103,127 @@ header{
   letter-spacing: 5px;
 }
 
-.top p{
-  color:white;
-  font-size:80px;
+
+
+.intro{
+  background-color: rgb(140,140,90);
+  margin:300px auto;
+  width:85%;
+  height:8000px;
+  position:relative;
+  top:230px;
+  left:0px;
+  border-radius:50px;
+  padding-bottom: 300px;
+}
+
+.intro h1{
   text-align: center;
-  letter-spacing: 7px;
+  font-size:80px;
+  padding:40px 0px;
+  border-bottom:5px dotted white;
+}
+
+.person{
+  padding-left: 50px;
+  padding-bottom: 30px;
+  height:270px;
+  border-bottom:5px dotted white;
+}
+
+.person h3{
+  color:rgb(255,248,220);
+  font-size:40px;
   height:30px;
 }
 
-.list{
-  height:2000px;
-  padding-bottom:200px;
+#hikac,#melon,#boku,#omo,#messu,#reiwa,#ippe{
+  padding-top: 120px;
+  margin-top: -120px;
 }
 
-.setsumei{
-  height:280px;
-  color:black;
-  border-top: 10px dotted gray;
-  border-bottom:10px dotted gray;
-  margin-top:100px;
+#kendo,#kon,#japan,#soba,#maenao,#thisu,#red{
+  padding-top: 120px;
+  margin-top: -120px;
 }
 
-.setsumei h3{
-  font-size:50px;
-  text-align: center;
+#papa,#bomb,#gomi{
+  padding-top: 120px;
+  margin-top: -120px;
 }
 
-.setsumei p{
-  text-align: center;
-}
 
-.lister{
-  background-color: rgb(230,250,250);
-  box-shadow:10px 10px black;
-  border-radius:30px;
-  width:90%;
-  margin:0 auto;
-
-}
-
-.youtube{
-  height:600px;
-  margin-bottom: 100px;
-}
-
-.other{
-  height:350px;
-}
-
-.lister p{
-  font-size:90px;
-  color:black;
-  height:60px;
-  padding-left: 20px;
-  padding-top:40px;
-}
-
-.lister ul{
-
-  display:flex;
-  flex-wrap:wrap;
-}
-.lister li{
-  padding:5px 0px;
-  list-style:none;
-  flex:auto;
-  width:25%;
-  text-align: center;
-}
-
-.lister li a{
-  display:inline-block;
-  font-size:27px;
+.person-left{
   color:white;
-  background-color:rgb(88,158,50,0.95);
-  width:80%;
-  text-align:center;
-  text-decoration: none;
-  border-radius:10px;
+  font-size: 25px;
+  padding:-10px 0px;
+  float:left;
 }
 
-.lister li a:hover{
-  background-color:rgba(88,158,50,0.6);
+.person-left a{
+  color:white;
 }
 
-@media(max-width:1000px){
+.person-right {
+  font-size:20px;
+  color:rgb(255,248,220);
+  float:right;
+  padding-right: 110px;
+}
+
+.person-right p{
+  height:20px;
+}
+
+#content{
+  color:white;
+  font-size:25px;
+  padding-bottom: 10px;
+}
+
+@media(max-width:1025px){
   .top{
     height:670px;
   }
-  .top h1{
-    font-size: 130px;
+
+  .intro{
+  height:15000px;
+  }
+  .person{
+    height:550px;
   }
 
-  .top p{
-    font-size: 70px;
+  .person-left{
+    font-size: 35px;
   }
 
-  .list{
-    height:2500px;
+  .person-right{
+    padding-top: 20px;
+    float:left;
+    font-size: 25px;
+    color:rgb(255,248,220);
   }
-  .youtube{
-    height:1200px;
-  }
-
-
-  .lister li{
-    width:50%;
-    padding:25px 0px;
+  #content{
+    padding-bottom: 60px;
+    font-size: 35px;
+    color:white;
   }
 }
+
+
 
 footer{
   height:160px;
   background-color:black;
   color:white;
-  width:auto;
+  width:100%;
   text-align:center;
   padding-top:15px;
   padding-bottom: 50px;
 }
 
+@media(max-width:1025px){
+  footer{
+    font-size: 19px;
+  }
+}
