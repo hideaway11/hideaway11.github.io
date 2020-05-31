@@ -76,6 +76,93 @@ header{
 .header-right li:hover >ul{
   display:block;
 }
+.menu-icon {
+  color: white;
+  font-size: 35px;
+  padding: 25px 20px;
+  /* displayをnoneに指定してください */
+  display:none;
+}
+
+.header-smart{
+  display: none;
+}
+
+@media(max-width:1025px){
+  header{
+    height:85px;
+  }
+  .header-left{
+    font-size:22px;
+    padding-top: 0px;
+    margin:0px;
+    float:right;
+    letter-spacing: 1px;
+  }
+
+  .header-right{
+    display:none;
+  }
+
+  .header-smart{
+    display: block;
+  }
+  .menu-icon{
+    float:left;
+    display:block;
+    position:relative;
+  }
+
+  .menu-icon{
+    color:white;
+    position: relative;
+  }
+
+  .menu-icon ul{
+    display:none;
+    position:absolute;
+    top:85px;
+    left:-15px;
+    margin-top:0px;
+    padding: 10px;
+    padding-left: 0px;
+    background-color: rgba(128,128,128,0.6);
+    width:280px;
+  }
+
+  .menu-icon ul li{
+    list-style:none;
+    float:inherit;
+    margin:0 auto;
+    padding:35px 10px;
+  }
+
+  .menu-icon ul li:nth-child(n+2){
+    border-top: 1px solid white;
+  }
+
+  .header-smart li a{
+    display:block;
+    margin:0px;
+    padding:0px 20px;
+    color:white;
+    text-decoration: none;
+    text-align:center;
+  }
+
+  .header-smart li a:hover{
+    background-color: rgba(255,255,240,0.3);
+    border-radius:10px;
+    height:55px;
+    line-height: 55px;
+  }
+
+  .menu-icon:hover >ul{
+    display:block;
+  }
+}
+
+
 
 .top{
   background-image:url(https://pictkan.com/photo/sports/soccer/%E8%90%BD%E3%81%A1%E8%91%89%E3%81%A8%E5%8F%A4%E3%81%B3%E3%81%9F%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB/jRZl/1280/853/download);
@@ -101,7 +188,7 @@ header{
 .intro{
   background-color: rgb(210,230,230);
   margin:300px auto;
-  width:1200px;
+  width:85%;
   height:1000px;
   position:relative;
   top:230px;
@@ -273,4 +360,10 @@ footer{
   text-align:center;
   padding-top:15px;
   padding-bottom: 50px;
+}
+
+@media(max-width:1025px){
+  footer{
+    font-size: 19px;
+  }
 }
