@@ -10,17 +10,23 @@
   <body>
     <header>
       <div class="container">
-        <div class="header-smart">
-          <span class="fa fa-bars menu-icon">
-          <ul>
-            <li><a href="index.html">ホーム</a></li>
-            <li><a href="rank.html">ランキング</a></li>
-            <li><a href="intro.html">Youtuber</a></li>
-            <li><a href="mono.html">Website</a></li>
-            <li><a href="otoi.html">お問い合わせ</a></li>
-          </ul>
-          </span>
+        <div id="nav-drawer">
+          <input id="nav-input" type="checkbox" class="nav-unshown">
+          <label id="nav-open" for="nav-input"><span class="fa fa-bars menu-icon"></span></label>
+          <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+            <div id="nav-content" class="header-smart">
+
+                <ul>
+                  <li><a href="index.html">ホーム</a></li>
+                  <li><a href="rank.html">ランキング</a></li>
+                  <li><a href="intro.html">Youtuber</a></li>
+                  <li><a href="mono.html">Website</a></li>
+                  <li><a href="otoi.html">お問い合わせ</a></li>
+                </ul>
+
+            </div>
         </div>
+
         <div class="header-left">
           <h3> winning eleven</h3>
         </div>
@@ -55,10 +61,10 @@
         <div class="one">
           <p>Youtube登録者数<span></span></p>
           <ul>
-            <li>1st　HikacGames<span><a href="intro.html#hikac">42.8万人</a></span></li>
-            <li>2nd　ぼくくんゲームズ<span><a href="intro.html#boku">23.5万人</a></span></li>
-            <li>3rd　おもちゃTV2nd<span><a href="intro.html#omo">18.3万人</a></span></li>
-            <li><span> (紹介ページ👆)</span></li>
+            <li>1st　<a href="intro.html#hikac">HikacGames</a><span>42.8万人</span></li>
+            <li>2nd　<a href="intro.html#boku">ぼくくんゲームズ</a><span>23.5万人</span></li>
+            <li>3rd　<a href="intro.html#omo">おもちゃTV2nd</a><span>18.3万人</span></li>
+            <li id="intro">(紹介ページ👆)<span></span></li>
           </ul>
 
         </div>
