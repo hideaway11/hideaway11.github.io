@@ -239,7 +239,6 @@ header{
   width:40%;
   margin:20px;
   height:350px;
-
   background-color: white;
   border-radius: 10px;
 }
@@ -281,6 +280,14 @@ header{
   padding-right: 45px;
   font-size: 25px;
   font-weight: normal;
+}
+.rank h1 .fas{
+  color:black;
+  font-size: 65px;
+}
+.one .fas{
+  color:goldenrod;
+
 }
 
 
