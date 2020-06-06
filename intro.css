@@ -210,7 +210,7 @@ header{
   background-color: rgb(150,150,100);
   margin:300px auto;
   width:85%;
-  height:9000px;
+  height:7000px;
   position:relative;
   top:230px;
   left:0px;
@@ -223,6 +223,11 @@ header{
   font-size:80px;
   padding:40px 0px;
   border-bottom:5px dotted white;
+}
+
+.intro .fab{
+  color:black;
+  font-size: 65px;
 }
 
 .person{
@@ -238,7 +243,7 @@ header{
   height:30px;
 }
 
-#hikac,#melon,#boku,#omo,#messu,#reiwa,#ippe{
+#hikac,#melon,#boku,#omo,#poti,#reiwa,#ippe{
   padding-top: 120px;
   margin-top: -120px;
 }
@@ -289,16 +294,24 @@ header{
   color:rgb(255,248,220);
 }
 
+.person-right a{
+  color:rgb(224,255,255);
+}
+
+#none{
+  display: none;
+}
+
 @media(max-width:1025px){
   .top{
     height:670px;
   }
 
   .intro{
-  height:18000px;
+  height:14000px;
   }
   .person{
-    height:730px;
+    height:760px;
   }
 
   .person-left{
@@ -314,7 +327,7 @@ header{
   .person-right p{
     height:auto;
     margin-bottom:0px;
-    padding-top: 0px;
+    padding-bottom: 25px;
   }
 
   .person-right p span{
@@ -326,6 +339,7 @@ header{
     padding-bottom: 60px;
     font-size: 35px;
     color:white;
+    padding-bottom: 5px;
   }
 }
 
