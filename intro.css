@@ -207,9 +207,9 @@ header{
 
 
 .intro{
-  background-color: rgb(150,150,100);
+  background-color: rgb(255,248,220);
   margin:300px auto;
-  width:85%;
+  width:90%;
   height:7000px;
   position:relative;
   top:230px;
@@ -222,7 +222,7 @@ header{
   text-align: center;
   font-size:80px;
   padding:40px 0px;
-  border-bottom:5px dotted white;
+  border-bottom:5px dotted black;
 }
 
 .intro .fab{
@@ -232,13 +232,13 @@ header{
 
 .person{
   padding-left: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   height:330px;
-  border-bottom:5px dotted white;
+  border-bottom:5px dotted black;
 }
 
 .person h3{
-  color:rgb(255,248,220);
+  color:rgb(165,42,42);
   font-size:40px;
   height:30px;
 }
@@ -260,21 +260,21 @@ header{
 
 
 .person-left{
-  color:white;
+  color:black;
   font-size: 25px;
   padding:-10px 0px;
   float:left;
 }
 
 .person-left a{
-  color:white;
+  color:black;
 }
 
 .person-right {
   font-size:20px;
-  color:rgb(224,255,255);
+  color:rgb(0,0,0);
   float:right;
-  padding-right: 100px;
+  padding-right: 50px;
 }
 
 .person-right p{
@@ -283,7 +283,7 @@ header{
 }
 
 #content{
-  color:white;
+  color:black;
   font-size:25px;
   padding-bottom: 10px;
 }
@@ -291,11 +291,11 @@ header{
 
 .person-right p span{
   font-size:20px;
-  color:rgb(255,248,220);
+  color:rgb(165,42,42);
 }
 
 .person-right a{
-  color:rgb(224,255,255);
+  color:rgb(0,0,0);
 }
 
 #none{
@@ -308,38 +308,45 @@ header{
   }
 
   .intro{
-  height:14000px;
+  height:17500px;
   }
   .person{
-    height:760px;
+    height:970px;
+  }
+
+  .person h3{
+    font-size: 53px;
+    padding-top: 30px;
   }
 
   .person-left{
-    font-size: 35px;
+    padding-top: 30px;
+    font-size: 38px;
   }
 
   .person-right{
     float:left;
-    font-size: 28px;
-    color:rgb(224,255,255);
+    font-size: 29px;
+    color:rgb(0,0,0);
   }
 
   .person-right p{
     height:auto;
     margin-bottom:0px;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
   }
 
   .person-right p span{
     font-size:26px;
-    color:rgb(255,248,220);
+    color:rgb(165,42,42);
   }
+
 
   #content{
     padding-bottom: 60px;
-    font-size: 35px;
-    color:white;
-    padding-bottom: 5px;
+    font-size: 38px;
+    color:black;
+    padding-bottom: 25px;
   }
 }
 
