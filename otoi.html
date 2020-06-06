@@ -21,7 +21,7 @@
                   <li><a href="index.html">ホーム</a></li>
                   <li><a href="rank.html">ランキング</a></li>
                   <li><a href="intro.html">Youtuber</a></li>
-                  
+
                   <li><a href="otoi.html">お問い合わせ</a></li>
                 </ul>
 
@@ -61,25 +61,35 @@
 
         <div class="Form">
 
+        <form action="https://api.staticforms.xyz/submit" method="post">
+
   <div class="Form-Item">
     <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>氏名</p>
-    <input type="text" class="Form-Item-Input" placeholder="例）山田太郎">
+    <input type="text" name="name" class="Form-Item-Input" placeholder="Your Name">
   </div>
 
   <div class="Form-Item">
     <p class="Form-Item-Label"><span class="Form-Item-Label-Required">必須</span>メールアドレス</p>
-    <input type="email" class="Form-Item-Input" placeholder="例）example@gmail.com">
+    <input type="email" name="email" class="Form-Item-Input" placeholder="Your Email">
   </div>
   <div class="Form-Item">
     <p class="Form-Item-Label isMsg"><span class="Form-Item-Label-Required">必須</span>お問い合わせ内容</p>
-    <textarea class="Form-Item-Textarea"></textarea>
+    <textarea name="message" class="Form-Item-Textarea"></textarea>
   </div>
+
+  <input type="text" name="honeypot" style="display:none">
+  <input type="hidden" name="accessKey" value="efb09d9c-e2a6-4d1a-9ed9-a902ba27b50a">
+  <input type="hidden" name="subject" value="ウイイレhideaway Contact">
+  <input type="hidden" name="replyTo" value="@">
+  <input type="hidden" name="redirectTo" value="https://hideaway11.github.io/otoi.html">
+
   <input type="submit" class="Form-Btn" value="送信する">
-</div>
+
+  </form>
+        </div>
 
       </div>
     </div>
-
 
     <footer>
       <p>当サイトは個人が運営するものであり、いかなる団体にも所属いたしません。</p>
