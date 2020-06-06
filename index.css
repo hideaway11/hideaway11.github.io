@@ -248,6 +248,11 @@ header{
   margin-bottom: 100px;
 }
 
+.youtube .fab{
+  color:red;
+  font-size: 80px;
+}
+
 .other{
   height:350px;
 }
@@ -317,6 +322,7 @@ header{
   .youtube{
     height:1400px;
   }
+
 
 
   .lister li{
