@@ -384,6 +384,24 @@ footer{
 }
 
 @media(max-width:1025px){
+  body{
+    -webkit-text-size-adjust:100%;
+  }
+  .top{
+    height:670px;
+  }
+
+
+
+  .top h1{
+    font-size: 100px;
+  }
+
+
+  .intro h1{
+    font-size: 60px;
+  }
+
   footer{
     font-size: 19px;
     padding-top:80px;
