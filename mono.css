@@ -1,0 +1,348 @@
+body{
+  position:absolute;
+  left:50%;
+  margin-left:-50%;
+  width:100%;
+  font-family:Hiragino Kaku Gothic ProN;
+}
+
+.container{
+
+  padding:0 15px;
+}
+
+header{
+  background-color:black;
+  height:80px;
+  width:100%;
+  position:fixed;
+  top:0px;
+  z-index:10;
+}
+
+.header-left{
+  margin-top:10px;
+  color:white;
+  float:left;
+}
+
+.header-right {
+  float:right;
+  padding-top: 11px;
+}
+
+.header-right li{
+  float:left;
+  color:white;
+  list-style:none;
+  position: relative;
+}
+
+.header-right li ul{
+  display:none;
+  position:absolute;
+  margin-top:0px;
+  padding-top: 5px;
+  padding-left: 0;
+  background-color: black;
+  width:120px;
+}
+
+.header-right li ul li{
+  float:inherit;
+  margin:0 auto;
+  padding:10px;
+}
+
+.header-right li ul li:nth-child(n+2){
+  border-top: 1px solid gray;
+}
+
+.header-right li a{
+  display:block;
+  margin:0px;
+  padding:0px 20px;
+  color:white;
+  text-decoration: none;
+  text-align:center;
+}
+
+.header-right li a:hover{
+  background-color: rgba(205,62,62,0.5);
+  border-radius:10px;
+  transition: all 0.5s;
+}
+
+.header-right li:hover >ul{
+  display:block;
+}
+
+#nav-drawer{
+  display: none;
+}
+
+@media(max-width:1025px){
+
+#nav-drawer{
+  display: block;
+}
+
+.header-right{
+  display: none;
+}
+
+.header-left{
+  float:right;
+  padding: 0px 18px;
+  margin: auto 0;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+header{
+  height:90px;
+}
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+.menu-icon{
+  color:white;
+  font-size: 55px;
+  padding:18px;
+  float:left;
+}
+
+
+
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 99;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;/*最前面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 60%;/*最大幅（調整してください）*/
+  height: 100%;
+  background: rgba(155,155,155,0.9);/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transfor: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+.header-smart{
+  font-size: 50px;
+  padding:30px;
+}
+
+.header-smart li{
+  list-style: none;
+  padding-top: 70px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid white;
+}
+
+.header-smart li a{
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  font-style: italic;
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
+}
+
+}
+
+
+
+.top{
+  background-image:url(https://pictkan.com/photo/sports/soccer/%E8%90%BD%E3%81%A1%E8%91%89%E3%81%A8%E5%8F%A4%E3%81%B3%E3%81%9F%E3%82%B5%E3%83%83%E3%82%AB%E3%83%BC%E3%83%9C%E3%83%BC%E3%83%AB/jRZl/1280/853/download);
+  background-size:cover;
+  opacity:0.7;
+  height:710px;
+  padding:30px 0px 0px 0px;
+  width:100%;
+  position:absolute;
+}
+
+.top h1{
+  font-size:150px;
+  color:black;
+  text-align:center;
+  padding-top:140px;
+  height:100px;
+  letter-spacing: 5px;
+}
+
+
+
+.rank{
+  background-color: rgb(150,150,150);
+  margin:300px auto;
+  width:80%;
+  height:5700px;
+  position:relative;
+  top:230px;
+  left:0px;
+  border-radius:50px;
+  padding-bottom: 300px;
+}
+
+.ones{
+  flex-direction: column;
+}
+
+.rank h1{
+  text-align: center;
+  font-size:80px;
+  padding-top:40px;
+}
+
+.rank li{
+  list-style: none;
+}
+
+.rank .one{
+  width:55%;
+  margin:60px auto;
+  height:450px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.one p{
+  font-size: 55px;
+  padding:20px 0px 0px 0px;
+  font-weight:bold;
+  margin-bottom:0px;
+  text-align: center;
+}
+
+.one p a{
+  text-decoration: underline;
+  color:rgb(150,150,200);
+  outline: none;
+}
+
+#hajime{
+  font-size:20px;
+  color: black;
+}
+
+.one li{
+  font-size:30px;
+  list-style: none;
+  color:black;
+  font-weight:bold;
+  padding-bottom: 5px;
+}
+
+.one li ul{
+  margin:10px;
+}
+.one li ul li{
+  font-weight:normal;
+  font-size: 20px;
+  list-style:circle;
+  padding-bottom: 20px;
+}
+
+#ooi a{
+  font-size: 43px;
+}
+
+.one li span{
+  font-weight: bolder;
+  color:rgb(100,100,255);
+}
+
+#formal,#pro,#lab,#wiki,#gati,#search,#shoot,#hide,#vola,#poti{
+  padding-top: 120px;
+  margin-top:-120px;
+}
+
+@media(max-width:1025px) {
+  .rank{
+    width:90%;
+    height:9300px;
+  }
+  .rank .one{
+    width:80%;
+    height:760px;
+    margin:80px auto;
+  }
+
+  .rank .one p{
+    margin-bottom: 50px;
+    padding-top:40px;
+  }
+  .rank .one li{
+    padding-bottom: 20px;
+    font-size: 40px;
+  }
+
+  .rank .one li ul{
+    padding-top:15px;
+  }
+  .rank .one li ul li{
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
+
+  #hajime{
+    font-size: 30px;
+  }
+
+
+
+}
+
+footer{
+  height:160px;
+  background-color:black;
+  color:white;
+  width:100%;
+  text-align:center;
+  padding-top:15px;
+  padding-bottom:50px;
+  margin-top: 100px;
+}
+
+@media(max-width:1025px){
+  footer{
+    font-size: 19px;
+    padding-top:80px;
+    padding-bottom:100px;
+  }
+}
