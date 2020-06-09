@@ -293,6 +293,22 @@ header{
 }
 
 @media(max-width:1025px) {
+  body{
+    -webkit-text-size-adjust:100%;
+  }
+  .top{
+    height:670px;
+  }
+
+  .top h1{
+    font-size: 100px;
+  }
+
+
+  .rank h1{
+    font-size: 60px;
+  }
+
   .rank{
     width:90%;
     height:9300px;
