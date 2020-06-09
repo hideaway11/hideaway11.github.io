@@ -322,6 +322,9 @@ header{
 }
 
 @media(max-width:1025px){
+  body{
+    -webkit-text-size-adjust:100%;
+  }
 
   .top{
     height:670px;
