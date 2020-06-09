@@ -207,10 +207,10 @@ header{
 
 
 .intro{
-  background-color: rgb(255,248,220);
+  background-color: rgb(235,228,200);
   margin:300px auto;
   width:90%;
-  height:7000px;
+  height:7100px;
   position:relative;
   top:230px;
   left:0px;
@@ -230,17 +230,26 @@ header{
   font-size: 65px;
 }
 
+.persons{
+  flex-direction:column;
+}
+
 .person{
+  margin:60px auto;
+  width:95%;
   padding-left: 50px;
-  padding-bottom: 50px;
-  height:330px;
-  border-bottom:5px dotted black;
+  height:380px;
+  background-color: white;
+  padding: auto auto;
+  border-radius: 20px;
 }
 
 .person h3{
   color:rgb(165,42,42);
   font-size:40px;
   height:30px;
+  padding-top: 40px;
+
 }
 
 #hikac,#melon,#boku,#omo,#poti,#reiwa,#ippe{
@@ -264,6 +273,7 @@ header{
   font-size: 25px;
   padding:-10px 0px;
   float:left;
+  font-weight: bolder;
 }
 
 .person-left a{
@@ -286,6 +296,7 @@ header{
   color:black;
   font-size:25px;
   padding-bottom: 10px;
+  font-weight: bolder;
 }
 
 
@@ -302,21 +313,39 @@ header{
   display: none;
 }
 
+
+
 @media(max-width:1025px){
   .top{
     height:670px;
   }
 
+
+
+  .top h1{
+    font-size: 100px;
+  }
+
+
+  .intro h1{
+    font-size: 60px;
+  }
+
+  .intro .fab{
+    font-size: 55px;
+  }
+
   .intro{
-  height:17500px;
+  height:18000px;
   }
   .person{
-    height:970px;
+    height:1000px;
+    margin:100px auto;
   }
 
   .person h3{
-    font-size: 53px;
-    padding-top: 30px;
+    font-size: 48px;
+    padding-top: 70px;
   }
 
   .person-left{
